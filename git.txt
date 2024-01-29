@@ -1,0 +1,65 @@
+How to install git on a local machine
+
+Step 1:
+Download the latest version of Git and choose the 64/32 bit version. After the file is downloaded, install it in the system. Once installed, select Launch the Git Bash, then click on finish. The Git Bash is now launched.
+
+Git Installation
+
+Step 2:
+Check the Git version:
+
+$ git --version
+Step 3:
+For any help, use the following command:
+
+$ git help config
+This command will lead you to a browser of config commands. Basically, the help command provides a manual from the help page for the command just following it (here, it's config).
+
+Another way to use the same command is as follows:
+
+$ git config --help
+Step 4:
+Create a local directory using the following command:
+
+$ mkdir test
+
+$ cd test
+
+Step 5:
+The next step is to initialize the directory:
+
+$ git init
+Step 6:
+Go to the folder where "test" is created and create a text document named "demo." Open "demo" and put any content, like "Hello Simplilearn." Save and close the file.
+
+Step 7:
+Enter the Git bash interface and type in the following command to check the status:
+
+$ git status
+Step 8:
+Add the "demo" to the current directory using the following command:
+
+$ git add demo.txt
+Step 9:
+Next, make a commit using the following command:
+
+$ git commit -m "committing a text file"
+Step 10:
+Link the Git to a Github Account:
+
+$ git config --global user.username
+
+Step 11:
+Open your Github account and create a new repository with the name "test_demo" and click on "Create repository." This is the remote repository. Next, copy the link of "test_demo."
+
+Step 12:
+Go back to Git bash and link the remote and local repository using the following command:
+
+$ git remote add origin <link>
+Here, <link> is the link copied in the previous step.
+Step 13:
+Push the local file onto the remote repository using the following command:
+
+$ git push origin master
+Step 14:
+Move back to Github and click on "test_demo" and check if the local file "demo.txt" is pushed to this repository.
